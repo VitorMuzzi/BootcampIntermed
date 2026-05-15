@@ -10,6 +10,7 @@
 <body>
 
     <nav>
+        <div class="logo"></div>
         <div class="nav-links">
             <a href="#sobre">Sobre</a>
             <a href="#habilidades">Habilidades</a>
@@ -19,7 +20,7 @@
 
     <header id="inicio">
         <h1>Vitor Gomes Muzzi</h1>
-        <h2 class="typing-effect">Engenharia de Software CEUB</h2>
+        <h2 class="typing-effect">Engenharia de Software @ CEUB</h2>
         <p style="max-width: 600px; color: #94a3b8; font-size: 1.2rem; margin-top: 1rem;">
             Desenvolvendo algo, definitivamente.
         </p>
@@ -43,17 +44,12 @@
     <section id="habilidades">
         <h2 class="section-title">Stack Tecnológico</h2>
         <div class="skills-container">
-            <div class="skill-tag" onclick="openModal('JavaScript', 'fa-js', 'Utilizado no desenvolvimento de interfaces dinâmicas e na integração de lógicas de frontend com APIs, permitindo uma comunicação ágil entre cliente e servidor em diversos projetos acadêmicos e pessoais.')"><i class="fa-brands fa-js"></i> JavaScript</div>
-            
-            <div class="skill-tag" onclick="openModal('React.js', 'fa-react', 'Tecnologia central no desenvolvimento do front-end do projeto Kyndo. Utilizei o React para criar componentes reutilizáveis e gerenciar estados de forma eficiente em um sistema de demandas.')"><i class="fa-brands fa-react"></i> React.js</div>
-            
-            <div class="skill-tag" onclick="openModal('Node.js', 'fa-node-js', 'Empregado na construção de arquiteturas de backend voltadas para performance e na integração de microsserviços, facilitando a troca de dados em tempo real.')"><i class="fa-brands fa-node-js"></i> Node.js</div>
-            
-            <div class="skill-tag" onclick="openModal('Python', 'fa-python', 'Linguagem base para o desenvolvimento do meu bot de faturamento via WhatsApp. Criei scripts e automações com lógicas complexas para enviar lembretes e gerenciar integrações com a API de mensageria.')"><i class="fa-brands fa-python"></i> Python</div>
-            
-            <div class="skill-tag" onclick="openModal('SQLite', 'fa-database', 'Implementado como solução de banco de dados no meu sistema de Controle de Acesso de Segurança. Ele foi essencial para gerenciar o cache de dispositivos e as permissões de hardware de forma leve e segura.')"><i class="fa-solid fa-database"></i> SQLite</div>
-            
-            <div class="skill-tag" onclick="openModal('Git/GitHub', 'fa-git-alt', 'Ferramentas indispensáveis no meu fluxo de trabalho. Utilizo repositórios como o do Kyndo e meu Portfólio Web para garantir o versionamento de código estruturado e documentar o progresso das entregas.')"><i class="fa-brands fa-git-alt"></i> Git/GitHub</div>
+            <div class="skill-tag" onclick="openTechModal('JavaScript', 'fa-js', 'Utilizado no desenvolvimento de interfaces dinâmicas e na integração de lógicas de frontend com APIs, permitindo uma comunicação ágil entre cliente e servidor em diversos projetos acadêmicos e pessoais.')"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-tag" onclick="openTechModal('React.js', 'fa-react', 'Tecnologia central no desenvolvimento do front-end do projeto Kyndo. Utilizei o React para criar componentes reutilizáveis e gerenciar estados de forma eficiente em um sistema de demandas.')"><i class="fa-brands fa-react"></i> React.js</div>
+            <div class="skill-tag" onclick="openTechModal('Node.js', 'fa-node-js', 'Empregado na construção de arquiteturas de backend voltadas para performance e na integração de microsserviços, facilitando a troca de dados em tempo real.')"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="skill-tag" onclick="openTechModal('Python', 'fa-python', 'Linguagem base para o desenvolvimento do meu bot de faturamento via WhatsApp. Criei scripts e automações com lógicas complexas para enviar lembretes e gerenciar integrações com a API de mensageria.')"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill-tag" onclick="openTechModal('SQLite', 'fa-database', 'Implementado como solução de banco de dados no meu sistema de Controle de Acesso de Segurança. Ele foi essencial para gerenciar o cache de dispositivos e as permissões de hardware de forma leve e segura.')"><i class="fa-solid fa-database"></i> SQLite</div>
+            <div class="skill-tag" onclick="openTechModal('Git/GitHub', 'fa-git-alt', 'Ferramentas indispensáveis no meu fluxo de trabalho. Utilizo repositórios como o do Kyndo e meu Portfólio Web para garantir o versionamento de código estruturado e documentar o progresso das entregas.')"><i class="fa-brands fa-git-alt"></i> Git/GitHub</div>
         </div>
     </section>
 
@@ -61,24 +57,26 @@
         <h2 class="section-title">Projetos em Destaque</h2>
         <div class="projects-grid">
             
-            <div class="project-card">
+            <div class="project-card" onclick="openProjectModal('Kyndo', ['image_0.png'], 'Sistema de gerenciamento de demandas projetado com arquitetura moderna para organização, rastreabilidade e acompanhamento ágil de tarefas. Desenvolvido para centralizar o fluxo de trabalho da equipe, permitindo a criação, atribuição e monitoramento de tickets de demanda com atualizações em tempo real e relatórios de progresso.', 'https://github.com/VitorMuzzi/kyndo-sistema-de-gerenciamento-de-demandas', '')">
+                <div class="view-more"><i class="fa-solid fa-expand"></i></div>
                 <div class="project-img"></div>
                 <div class="project-content">
                     <h3 class="project-title">Kyndo</h3>
                     <p class="project-desc">Sistema de gerenciamento de demandas projetado com arquitetura moderna para organização, rastreabilidade e acompanhamento ágil de tarefas.</p>
                     <div class="project-techs">
-                        <span>React.js</span> <span>FastAPI</span> <span>SQLite</span>
+                        <span>React.js</span> <span>FastAPI</span> <span>Integração</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" onclick="openProjectModal('nome do repositorio', [], 'descrição do projeto', 'https://github.com/VitorMuzzi', '')">
+                <div class="view-more"><i class="fa-solid fa-expand"></i></div>
                 <div class="project-img img-2"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Nome do seu Repositório</h3>
-                    <p class="project-desc">tmeplate.</p>
+                    <h3 class="project-title">Nome do projeto</h3>
+                    <p class="project-desc">template</p>
                     <div class="project-techs">
-                        <span>Linguagem</span> <span>Ferramenta</span>
+                        <span>Linguagem</span> 
                     </div>
                 </div>
             </div>
@@ -95,50 +93,39 @@
     </footer>
 
     <div id="techModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h3 class="modal-title"><i id="modalIcon" class=""></i> <span id="modalTitle">Tecnologia</span></h3>
-            <p id="modalText" class="modal-text">Descrição da aplicação.</p>
-            <button class="btn btn-primary" style="margin-top: 25px; width: 100%; justify-content: center;" onclick="closeModal()">Fechar</button>
+        <div class="modal-content-tech">
+            <span class="close-btn" onclick="closeModal('techModal')">&times;</span>
+            <h3 class="modal-title-tech"><i id="modalTechIcon" class=""></i> <span id="modalTechTitle">Tecnologia</span></h3>
+            <p id="modalTechText" class="modal-text-tech">Descrição da aplicação.</p>
+            <button class="btn btn-primary" style="margin-top: 25px; width: 100%; justify-content: center;" onclick="closeModal('techModal')">Fechar</button>
         </div>
     </div>
 
-    <script>
-        function openModal(title, iconClass, text) {
-            document.getElementById('modalTitle').innerText = title;
-            document.getElementById('modalIcon').className = ''; // Reseta as classes
-            document.getElementById('modalIcon').classList.add('fa-brands'); // Adiciona classe base
-            if (iconClass === 'fa-database') {
-                document.getElementById('modalIcon').classList.replace('fa-brands', 'fa-solid'); // Ajuste para o ícone de BD
-            }
-            document.getElementById('modalIcon').classList.add(iconClass);
-            document.getElementById('modalText').innerText = text;
+    <div id="projectModal" class="modal">
+        <div class="modal-content-project">
+            <span class="close-btn" onclick="closeModal('projectModal')">&times;</span>
             
-            const modal = document.getElementById('techModal');
-            modal.style.display = 'flex';
-            // delay para a transição de opacidade funcionar direito
-            setTimeout(() => {
-                modal.classList.add('active');
-            }, 10);
-        }
+            <div class="project-gallery">
+                <div class="main-img-container">
+                    <img id="modalProjectMainImg" src="" alt="Visualização principal do projeto">
+                </div>
+                <div id="modalProjectThumbs" class="thumbnail-container">
+                </div>
+            </div>
+            
+            <div class="project-details-modal">
+                <div class="modal-project-title">
+                    <span id="modalProjectTitle">Nome do Projeto</span>
+                    <div class="project-links-modal">
+                        <a id="modalProjectRepoBtn" href="" target="_blank" class="btn btn-outline btn-modal"><i class="fa-brands fa-github"></i> Repositório</a>
+                        <a id="modalProjectDemoBtn" href="" target="_blank" class="btn btn-primary btn-modal"><i class="fa-solid fa-rocket"></i> Ver Demo</a>
+                    </div>
+                </div>
+                <p id="modalProjectDesc" class="modal-text-tech">Descrição detalhada do projeto aparecerá aqui.</p>
+            </div>
+        </div>
+    </div>
 
-        function closeModal() {
-            const modal = document.getElementById('techModal');
-            modal.classList.remove('active');
-            // espera a transição terminar pra sair o display
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 300);
-        }
-
-        // Fechar o modal ao clicar fora dele
-        window.onclick = function(event) {
-            const modal = document.getElementById('techModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
