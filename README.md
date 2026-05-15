@@ -1,4 +1,4 @@
-# Portfolio- Vitor Gomes Muzzi
+# Portfolio - Vitor Gomes Muzzi
 
 Repositório destinado ao armazenamento de projetos acadêmicos para composição de perfil profissional no github.
 
